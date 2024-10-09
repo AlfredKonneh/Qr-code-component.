@@ -1,0 +1,62 @@
+:root {
+  --color-White: hsl(0, 0%, 100%);
+  --color-Slate-300: hsl(212, 45%, 89%);
+  --color-Slate-500: hsl(216, 15%, 48%);
+  --color-Slate-900: hsl(218, 44%, 22%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  background: var(--color-Slate-300);
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.qr-code-card {
+  flex-direction: column;
+  gap: 2.4rem;
+  background: var(--color-White);
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 2rem;
+  padding: 1.6rem 1.6rem 4rem 1.6rem;
+  max-width: 300px;
+}
+
+.qr-code-image {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card__body {
+  align-items: center;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding-inline: 1.6rem;
+  text-align: center;
+}
+
+.card__heading {
+  color: var(--color-Slate-900);
+  font-size: 2rem;
+}
+
+.card__info {
+  color: var(--color-Slate-500);
+}
